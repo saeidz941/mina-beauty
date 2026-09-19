@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#7b8067">
+<meta name="theme-color" content="#e58ca8">
 
 <title>آموزشگاه و سالن زیبایی مینا</title>
 
@@ -14,9 +14,9 @@
 
 body{
     margin:0;
-    background:#eef0e8;
+    background:linear-gradient(135deg,#fde8f0,#fff8fb);
     font-family:Tahoma,Arial,sans-serif;
-    color:#414638;
+    color:#513d45;
 }
 
 .container{
@@ -26,15 +26,15 @@ body{
 }
 
 .card{
-    background:#f8f5ee;
+    background:#fffafd;
     border-radius:28px;
     overflow:hidden;
-    box-shadow:0 12px 40px rgba(0,0,0,.15);
+    box-shadow:0 12px 40px rgba(180,90,120,.18);
 }
 
-/* Header */
+/* HEADER */
 .hero{
-    background:linear-gradient(150deg,#727861,#8c9278);
+    background:linear-gradient(150deg,#d97999,#efa9bd);
     padding:30px 20px;
     text-align:center;
     color:white;
@@ -45,13 +45,13 @@ body{
     height:150px;
     margin:auto;
     border-radius:24px;
-    border:2px solid #d7bf8b;
-    background:#777c68;
+    border:2px solid #f5d99d;
+    background:rgba(255,255,255,.12);
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    color:#f4e8c7;
+    color:#fff4dc;
 }
 
 .logo-main{
@@ -75,10 +75,10 @@ h1{
 .english{
     font-size:11px;
     letter-spacing:5px;
-    color:#ead8ae;
+    color:#ffe7ee;
 }
 
-/* Content */
+/* CONTENT */
 .content{
     padding:20px;
 }
@@ -87,18 +87,19 @@ h2{
     text-align:center;
     font-size:18px;
     margin:6px 0 16px;
+    color:#9c526c;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn{
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:10px;
     text-decoration:none;
-    color:#414638;
+    color:#513d45;
     background:white;
-    border:1px solid #ddd4c2;
+    border:1px solid #efd1dc;
     border-radius:16px;
     padding:15px 16px;
     margin:10px 0;
@@ -112,25 +113,27 @@ h2{
 
 .btn strong{
     font-size:15px;
+    direction:ltr;
+    unicode-bidi:isolate;
 }
 
 .whatsapp{
-    border-color:#b9c6a7;
+    border-color:#cfe1c9;
 }
 
 .instagram{
-    border-color:#c9b68a;
+    border-color:#e6c5d2;
 }
 
-/* Map */
+/* MAP */
 .section{
     margin-top:25px;
 }
 
 .map{
-    background:#b79a61;
+    background:#d77e99;
     color:white;
-    border-color:#b79a61;
+    border-color:#d77e99;
     justify-content:center;
     font-weight:bold;
 }
@@ -138,26 +141,78 @@ h2{
 .address{
     line-height:2;
     text-align:center;
-    background:#e8eadf;
+    background:#fff0f5;
+    border:1px solid #f0d4df;
     border-radius:18px;
     padding:15px;
     margin-top:12px;
     font-size:14px;
 }
 
-.coordinates{
+/* QR */
+.qr-box{
+    background:white;
+    border:1px solid #efd1dc;
+    border-radius:20px;
+    padding:18px;
     text-align:center;
-    direction:ltr;
-    font-size:12px;
-    color:#777;
-    margin-top:9px;
+    margin-top:12px;
 }
 
-/* Share */
+.qr-title{
+    font-weight:bold;
+    font-size:17px;
+    color:#9c526c;
+    margin-bottom:12px;
+}
+
+.qr-code{
+    position:relative;
+    width:250px;
+    max-width:85vw;
+    margin:auto;
+    background:white;
+    padding:8px;
+    border-radius:16px;
+    border:1px solid #e8c5d2;
+}
+
+.qr-code img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.qr-logo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:54px;
+    height:54px;
+    border-radius:12px;
+    background:linear-gradient(145deg,#d97999,#b85e7b);
+    border:4px solid white;
+    box-shadow:0 2px 10px rgba(0,0,0,.18);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff1d5;
+    font:italic 24px Georgia,serif;
+}
+
+.qr-note{
+    font-size:12px;
+    color:#8a7079;
+    line-height:1.8;
+    margin:12px 0 0;
+}
+
+/* SHARE */
 .share{
     width:100%;
     border:0;
-    background:#7b8067;
+    background:#d77e99;
     color:white;
     border-radius:16px;
     padding:16px;
@@ -169,23 +224,24 @@ h2{
 .note{
     text-align:center;
     font-size:12px;
-    color:#777;
+    color:#9c526c;
     line-height:1.8;
 }
 
 .footer{
     text-align:center;
     padding:17px;
-    color:#888;
+    color:#9c526c;
+    background:#fff0f5;
     font-size:12px;
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
-
 <div class="card">
 
 <!-- HEADER -->
@@ -204,30 +260,25 @@ h2{
 
 </section>
 
-
 <div class="content">
 
 <!-- CONTACT -->
 <h2>تماس با ما</h2>
 
-<a class="btn"
-   href="tel:+989128609828">
+<a class="btn" href="tel:+989128609828">
     <span>📞 تماس</span>
     <strong>0912 860 9828</strong>
 </a>
 
-<a class="btn"
-   href="tel:+989192720553">
+<a class="btn" href="tel:+989192720553">
     <span>📞 تماس</span>
     <strong>0919 272 0553</strong>
 </a>
 
-<a class="btn"
-   href="tel:+982632516731">
+<a class="btn" href="tel:+982632516731">
     <span>☎️ تلفن ثابت</span>
     <strong>026 3251 6731</strong>
 </a>
-
 
 <!-- WHATSAPP -->
 <a class="btn whatsapp"
@@ -244,7 +295,6 @@ h2{
     <strong>0919 272 0553</strong>
 </a>
 
-
 <!-- INSTAGRAM -->
 <a class="btn instagram"
    href="https://www.instagram.com/SALONEZIBAIMINA/"
@@ -252,7 +302,6 @@ h2{
     <span>📸 اینستاگرام</span>
     <strong>SALONEZIBAIMINA</strong>
 </a>
-
 
 <!-- MAP -->
 <div class="section">
@@ -270,12 +319,38 @@ h2{
     ساختمان نوکاج، طبقه اول، واحد دو
 </div>
 
-<div class="coordinates">
-    35.831014, 51.004801
+</div>
+
+<!-- QR CODE -->
+<div class="section">
+
+<h2>بارکد صفحه</h2>
+
+<div class="qr-box">
+
+<div class="qr-title">
+    اسکن کنید و صفحه مینا را باز کنید
+</div>
+
+<div class="qr-code">
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=10&data=https%3A%2F%2Fsaeidz941.github.io%2Fmina-beauty%2F"
+alt="QR Code">
+
+<div class="qr-logo">
+    mina
 </div>
 
 </div>
 
+<p class="qr-note">
+    این بارکد لینک مستقیم صفحه آموزشگاه و سالن زیبایی مینا است.
+</p>
+
+</div>
+
+</div>
 
 <!-- SHARE -->
 <div class="section">
@@ -294,24 +369,21 @@ h2{
 
 </div>
 
-
 <div class="footer">
     آموزشگاه و سالن زیبایی مینا
 </div>
 
 </div>
-
 </div>
-
 
 <script>
 
 async function sharePage(){
 
     const shareData = {
-        title: "آموزشگاه و سالن زیبایی مینا",
-        text: "آموزشگاه و سالن زیبایی مینا",
-        url: window.location.href
+        title:"آموزشگاه و سالن زیبایی مینا",
+        text:"آموزشگاه و سالن زیبایی مینا",
+        url:"https://saeidz941.github.io/mina-beauty/"
     };
 
     if(navigator.share){
@@ -326,18 +398,13 @@ async function sharePage(){
 
         try{
 
-            await navigator.clipboard.writeText(
-                window.location.href
-            );
+            await navigator.clipboard.writeText(shareData.url);
 
             alert("لینک صفحه کپی شد.");
 
         }catch(error){
 
-            prompt(
-                "لینک صفحه:",
-                window.location.href
-            );
+            prompt("لینک صفحه:",shareData.url);
 
         }
 
@@ -348,4 +415,4 @@ async function sharePage(){
 </script>
 
 </body>
-                    </html>
+</html>
